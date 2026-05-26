@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 12.0px 'Apple Color Emoji'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ms"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Misi Hero Wang - Kuiz Matematik&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* CSS RESET &amp; VARIABLES */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg-color: #0d0e15;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--card-bg: #181a26;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--primary-neon: #00f2fe;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--secondary-neon: #9b51e0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-muted: #8b9bb4;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--success: #39ff14;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--danger: #ff3838;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* CONTAINER &amp; HEADER */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-neon);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* LEVEL SELECTOR HUB */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.level-hub {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(3, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.level-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #2c2f48;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.level-btn.unlocked {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--secondary-neon);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 8px rgba(155, 81, 224, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.level-btn.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--primary-neon);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-neon);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 15px rgba(0, 242, 254, 0.6);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.level-btn.locked {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: not-allowed;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.level-btn.locked::after {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>content: "<span class="s1">🔒</span>";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: -5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>right: -5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* PROGRESS BAR */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.progress-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #222533;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #333750;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.progress-bar {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 0%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(90deg, var(--secondary-neon), var(--primary-neon));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 10px var(--primary-neon);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: width 0.4s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* GAME CARD */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.game-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 30px rgba(0,0,0,0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #25283d;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-meta {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-neon);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.85rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* OPTIONS BUTTONS */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.options-grid {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #1f2234;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #333750;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn:hover:not(:disabled) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #282b42;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--primary-neon);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* FEEDBACK EFFECTS */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn.correct {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(57, 255, 20, 0.15) !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--success) !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--success);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn.wrong {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 56, 56, 0.15) !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--danger) !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--danger);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* POPUP VISUAL TAHNIAH */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.toast-feedback {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 40%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translate(-50%, -50%) scale(0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(13, 14, 21, 0.95);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid var(--success);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--success);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 30px rgba(57, 255, 20, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 10;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.toast-feedback.show {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translate(-50%, -50%) scale(1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* SUMMARY CARD */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.summary-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.summary-icon {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 4rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.summary-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.summary-title.pass { color: var(--success); text-shadow: 0 0 10px rgba(57,255,20,0.3); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.summary-title.fail { color: var(--danger); text-shadow: 0 0 10px rgba(255,56,56,0.3); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.score-badge {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.score-badge strong {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.action-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, var(--secondary-neon), var(--primary-neon));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 14px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 15px rgba(0, 242, 254, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.action-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 8px 20px rgba(0, 242, 254, 0.6);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* RESPONSIVE DESIGN */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 480px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header h1 { font-size: 1.6rem; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.game-card { padding: 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.question-text { font-size: 1.1rem; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.option-btn { padding: 12px 15px; font-size: 0.95rem; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- HEADER --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;MISI HERO WANG&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Kuasai Duit Syiling &amp; Wang Kertas Malaysia&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- LEVEL SELECTOR HUB --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="level-hub"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="level-btn active unlocked" id="btn-lvl1" onclick="switchLevel(1)"&gt;TAHAP 1&lt;br&gt;&lt;small&gt;Mudah&lt;/small&gt;&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="level-btn locked" id="btn-lvl2" onclick="switchLevel(2)"&gt;TAHAP 2&lt;br&gt;&lt;small&gt;Sederhana&lt;/small&gt;&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="level-btn locked" id="btn-lvl3" onclick="switchLevel(3)"&gt;TAHAP 3&lt;br&gt;&lt;small&gt;Sukar&lt;/small&gt;&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- PROGRESS BAR --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="progress-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="progress-bar" id="progress"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- MAIN GAME CARD --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="game-card" id="game-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Kandungan dinamik akan dijanakan oleh JavaScript --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- TOAST EFFECT TAHNIAH --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="toast-feedback" id="toast"&gt;TAHNIAH! <span class="s1">✨</span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// DATA SOALAN KUIZ</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const quizData = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>1: [ // TAHAP 1: Mengenal pasti mata wang (Syiling &amp; Wang Kertas)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Apakah warna bagi duit syiling 50 sen Malaysia?", a: ["Emas", "Perak", "Gangsa", "Biru"], c: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Wang kertas RM1 berwarna apa?", a: ["Hijau", "Merah", "Biru", "Jingga"], c: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Antara berikut, yang manakah duit syiling yang sah di Malaysia?", a: ["80 sen", "20 sen", "25 sen", "15 sen"], c: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Apakah gambar utama yang ada pada setiap wang kertas Malaysia?", a: ["KLCC", "Bunga Raya", "Harimau", "Yana"], c: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Wang kertas RM10 mempunyai warna dominan...", a: ["Merah", "Hijau", "Kuning", "Ungu"], c: 0 }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>2: [ // TAHAP 2: Mewakilkan nilai wang (Sen hingga RM1)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Dua keping duit syiling 20 sen dan satu keping 10 sen menjadi...", a: ["30 sen", "40 sen", "50 sen", "60 sen"], c: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Berapakah keping syiling 10 sen yang diperlukan untuk menjadi RM1?", a: ["5 keping", "10 keping", "20 keping", "1 keping"], c: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Adham ada 3 keping 20 sen. Berapakah jumlah wang Adham?", a: ["50 sen", "60 sen", "70 sen", "80 sen"], c: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Dua keping syiling 50 sen adalah sama nilai dengan...", a: ["RM1", "50 sen", "RM2", "10 sen"], c: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Antara kombinasi berikut, yang manakah bernilai 85 sen?", a: ["50 sen + 20 sen + 10 sen", "50 sen + 20 sen + 10 sen + 5 sen", "50 sen + 50 sen", "20 sen + 20 sen + 20 sen"], c: 1 }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>3: [ // TAHAP 3: Mewakilkan nilai wang (Ringgit hingga RM10)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Sebutkan jumlah bagi sekeping RM5 dan dua keping RM1.", a: ["RM6", "RM7", "RM8", "RM10"], c: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Berapakah keping wang RM2 yang sama nilai dengan sekeping RM10?", a: ["2 keping", "3 keping", "4 keping", "5 keping"], c: 3 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Kombinasi wang: RM5 + RM1 + RM1 + RM1. Berapakah jumlah nilainya?", a: ["RM6", "RM7", "RM8", "RM9"], c: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Aina ingin membeli buku berharga RM10. Dia mempunyai sekeping RM5. Berapa banyak lagi wang RM1 yang dia perlukan?", a: ["3 keping", "4 keping", "5 keping", "6 keping"], c: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ q: "Dua keping wang kertas RM5 adalah bersamaan dengan...", a: ["RM2", "RM7", "RM10", "RM5"], c: 2 }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>]</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// GAME STATE</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentLevel = 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentQuestionIndex = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let score = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let unlockedLevels = [1];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let canAnswer = true;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// INITIALIZE GAME</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const gameCard = document.getElementById('game-card');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const progressBar = document.getElementById('progress');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const toast = document.getElementById('toast');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function loadQuestion() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>canAnswer = true;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const questions = quizData[currentLevel];</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update progress bar</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const progressPercent = (currentQuestionIndex / questions.length) * 100;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>progressBar.style.width = `${progressPercent}%`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (currentQuestionIndex &gt;= questions.length) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>showSummary();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const currentQuestion = questions[currentQuestionIndex];</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>let optionsHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestion.a.forEach((option, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>optionsHTML += `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="option-btn" onclick="checkAnswer(${index}, this)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>${option}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>gameCard.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question-meta"&gt;Tahap ${currentLevel} • Soalan ${currentQuestionIndex + 1}/${questions.length}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question-text"&gt;${currentQuestion.q}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="options-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>${optionsHTML}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function checkAnswer(selectedIndex, buttonElement) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (!canAnswer) return;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>canAnswer = false;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const questions = quizData[currentLevel];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const correctAnswerIndex = questions[currentQuestionIndex].c;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const allButtons = document.querySelectorAll('.option-btn');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (selectedIndex === correctAnswerIndex) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Betul</p>
+<p class="p1"><span class="Apple-converted-space">                </span>buttonElement.classList.add('correct');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>score++;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Efek Visual Tahniah</p>
+<p class="p1"><span class="Apple-converted-space">                </span>toast.classList.add('show');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>toast.classList.remove('show');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}, 800);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Salah</p>
+<p class="p1"><span class="Apple-converted-space">                </span>buttonElement.classList.add('wrong');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>allButtons[correctAnswerIndex].classList.add('correct'); // Tunjuk jawapan betul</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Pandang ke soalan seterusnya selepas kelewatan singkat</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>currentQuestionIndex++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>loadQuestion();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 1500);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showSummary() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>progressBar.style.width = '100%';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const passed = score &gt;= 4; // Syarat wajib: 4/5 markah</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>let summaryHTML = '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (passed) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>summaryHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="summary-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="summary-icon"&gt;<span class="s1">🏆</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="summary-title pass"&gt;TAHNIAH! LULUS&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="score-badge"&gt;Anda mendapat &lt;strong&gt;${score}/5&lt;/strong&gt; markah.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p style="color: var(--text-muted); margin-bottom: 25px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>${currentLevel &lt; 3 ? 'Tahap seterusnya telah dibuka! Bersedia untuk cabaran baru?' : 'Hebat! Anda telah menamatkan semua tahap dengan cemerlang!'}</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="action-btn" onclick="nextAction(true)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>${currentLevel &lt; 3 ? 'TERUSKAN KE TAHAP SETERUSNYA' : 'MAIN SEMULA KUIZ'}</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Unlock tahap seterusnya secara dinamik</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (currentLevel &lt; 3 &amp;&amp; !unlockedLevels.includes(currentLevel + 1)) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>unlockedLevels.push(currentLevel + 1);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>updateLevelHubUI();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>summaryHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="summary-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="summary-icon"&gt;<span class="s1">🔄</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="summary-title fail"&gt;CUBA LAGI&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="score-badge"&gt;Anda mendapat &lt;strong&gt;${score}/5&lt;/strong&gt; markah.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p style="color: var(--text-muted); margin-bottom: 25px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Anda perlukan sekurang-kurangnya 4/5 markah untuk unlock tahap seterusnya. Jangan putus asa!</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="action-btn" onclick="nextAction(false)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>CUBA SEMULA TAHAP INI</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>gameCard.innerHTML = summaryHTML;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function nextAction(isPass) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (isPass) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (currentLevel &lt; 3) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>currentLevel++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Reset keseluruhan game jika dah tamat tahap 3</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>currentLevel = 1;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>unlockedLevels = [1];</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>updateLevelHubUI();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Reset trackers untuk tahap semasa/baru</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestionIndex = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>score = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateLevelHubUI();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>loadQuestion();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function switchLevel(levelNum) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (!unlockedLevels.includes(levelNum)) return; // Blok jika masih lock</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentLevel = levelNum;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestionIndex = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>score = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateLevelHubUI();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>loadQuestion();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateLevelHubUI() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let i = 1; i &lt;= 3; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const btn = document.getElementById(`btn-lvl${i}`);</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Reset kelas penanda</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.className = 'level-btn';</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (unlockedLevels.includes(i)) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.add('unlocked');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.add('locked');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (currentLevel === i) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Jalankan game buat kali pertama</p>
+<p class="p1"><span class="Apple-converted-space">        </span>updateLevelHubUI();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>loadQuestion();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
